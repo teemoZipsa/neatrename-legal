@@ -8,64 +8,68 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="shell nav">
-      <a class="brand" href="index.html" aria-label="NeatRename legal home">
-        <span class="brand-mark">NR</span>
-        <span>NeatRename</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html">Overview</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-      </nav>
-    </div>
-  </header>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="NeatRename legal home">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>NeatRename</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Overview</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="support.html">Support</a>
+        </nav>
+      </div>
+    </header>
 
-  <main class="shell">
-    <p class="eyebrow">Microsoft Store app</p>
-    <h1>NeatRename help and privacy.</h1>
-    <p>
-      Find help with previews, Apply, and Undo. You can also read what NeatRename
-      accesses and saves on your PC.
-    </p>
-    <div class="actions">
-      <a class="button primary" href="https://apps.microsoft.com/detail/9P6L0C1SX321">Open in Microsoft Store</a>
-      <a class="button" href="support.html">Get help</a>
-      <a class="button" href="privacy.html">Read the privacy policy</a>
-    </div>
-
-    <section class="grid" aria-label="Site sections">
-      <article class="card">
-        <h2>Privacy policy</h2>
-        <p>
-          Which file details the app reads, what it saves locally, and how to clear that data.
+    <main>
+      <section class="hero">
+        <p class="eyebrow">✦ Microsoft Store App · Local Batch Renamer</p>
+        <h1>Organize with precision.<br><span class="gradient-text">Rename with absolute confidence.</span></h1>
+        <p class="lede">
+          Get help with live previews, regex patterns, batch actions, and one-click undo on your PC—backed by transparent local processing with zero cloud telemetry.
         </p>
-        <a href="privacy.html">Read the policy</a>
-      </article>
+        <div class="actions">
+          <a class="button primary" href="https://apps.microsoft.com/detail/9P6L0C1SX321">✦ Open in Microsoft Store</a>
+          <a class="button" href="support.html">Get help</a>
+          <a class="button" href="privacy.html">Read the privacy policy</a>
+        </div>
+      </section>
 
-      <article class="card">
-        <h2>Support</h2>
-        <p>
-          Answers about installing, previewing, applying changes, and undoing a rename.
-        </p>
-        <a href="support.html">Get help</a>
-      </article>
+      <section class="content">
+        <div class="grid" aria-label="NeatRename public pages">
+          <article class="card">
+            <div>
+              <h2>✦ Privacy policy</h2>
+              <p>Zero tracking, zero cloud uploads. Learn how NeatRename handles local file metadata, presets, and undo history in <code>%LOCALAPPDATA%</code>.</p>
+            </div>
+            <a href="privacy.html">Read the policy →</a>
+          </article>
 
-      <article class="card">
-        <h2>Store listing</h2>
-        <p>
-          Install NeatRename or check for updates in Microsoft Store.
-        </p>
-        <a href="https://apps.microsoft.com/detail/9P6L0C1SX321">View in Store</a>
-      </article>
-    </section>
-  </main>
+          <article class="card">
+            <div>
+              <h2>✦ Support &amp; Workflow</h2>
+              <p>Clear answers for batch previews, regex rules, CSV mapping, conflict detection, and safe undo operations.</p>
+            </div>
+            <a href="support.html">Get help →</a>
+          </article>
 
-  <footer>
-    <div class="shell">
-      NeatRename support and privacy information.
-    </div>
-  </footer>
+          <article class="card">
+            <div>
+              <h2>✦ Store &amp; Updates</h2>
+              <p>Install NeatRename from the Microsoft Store, verify update availability, and review version details.</p>
+            </div>
+            <a href="https://apps.microsoft.com/detail/9P6L0C1SX321">View in Store →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>NeatRename help and privacy information.</p>
+      <span class="footer-badge"><span class="brand-spark">✦</span> Distilled with Gemini clarity</span>
+    </footer>
+  </div>
 </body>
 </html>

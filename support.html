@@ -8,92 +8,99 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="shell nav">
-      <a class="brand" href="index.html" aria-label="NeatRename legal home">
-        <span class="brand-mark">NR</span>
-        <span>NeatRename</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html">Overview</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-      </nav>
-    </div>
-  </header>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="NeatRename legal home">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>NeatRename</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Overview</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="support.html" aria-current="page">Support</a>
+        </nav>
+      </div>
+    </header>
 
-  <main class="shell">
-    <p class="eyebrow">Support</p>
-    <h1>Help with NeatRename.</h1>
-    <p>
-      Check the preview before applying a rename. If something looks wrong, the answers below
-      can help you find the cause.
-    </p>
-    <div class="actions">
-      <a class="button primary" href="https://github.com/teemoZipsa/neatrename-legal/issues/new/choose">Report a problem</a>
-      <a class="button" href="https://apps.microsoft.com/detail/9P6L0C1SX321">View in Microsoft Store</a>
-    </div>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">✦ Support &amp; Troubleshooting</p>
+        <h1>How can we <span class="gradient-text">help with NeatRename?</span></h1>
+        <p class="lede">
+          Always review the live preview before applying a batch rename. If a pattern isn't matching or Apply is blocked, check these practical diagnostic steps.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/teemoZipsa/neatrename-legal/issues/new/choose">✦ Report a problem</a>
+          <a class="button" href="https://apps.microsoft.com/detail/9P6L0C1SX321">View in Microsoft Store</a>
+        </div>
+      </section>
 
-    <h2>Install and update</h2>
-    <ul>
-      <li>Install NeatRename from its Microsoft Store page.</li>
-      <li>For updates, open Microsoft Store &gt; Library &gt; Get updates.</li>
-      <li>If a new version is not offered yet, it may still be rolling out to your device or region.</li>
-    </ul>
+      <section class="content">
+        <article class="document">
+          <h2>Install and update</h2>
+          <ul>
+            <li>Install NeatRename directly from its Microsoft Store page.</li>
+            <li>To check for updates: open <strong>Microsoft Store &gt; Library &gt; Get updates</strong>.</li>
+            <li>If a newly released version is not offered immediately, it may still be rolling out through Microsoft Store staging.</li>
+          </ul>
 
-    <h2>Common questions</h2>
+          <h2>Common questions</h2>
+          <div class="grid" aria-label="Common NeatRename support topics">
+            <section class="card">
+              <div>
+                <h3>✦ Where are my files processed?</h3>
+                <p>Previews, conflict checks, Apply, and Undo run 100% locally on your PC. NeatRename never uploads your files or directory paths.</p>
+              </div>
+            </section>
+            <section class="card">
+              <div>
+                <h3>✦ Why can't I apply a rename?</h3>
+                <p>Check the issues highlighted in Preview. Apply is blocked by file collisions, duplicate names, invalid regex, or Windows reserved path characters.</p>
+              </div>
+            </section>
+            <section class="card">
+              <div>
+                <h3>✦ Why did a CSV row not apply?</h3>
+                <p>CSV files require an <code>original,new</code> header. A row fails to match if the original name is missing, duplicated, or empty.</p>
+              </div>
+            </section>
+            <section class="card">
+              <div>
+                <h3>✦ Can I undo a rename?</h3>
+                <p>Yes. As long as the renamed files still exist in place, open <strong>History</strong> and choose the completed batch to revert names immediately.</p>
+              </div>
+            </section>
+            <section class="card">
+              <div>
+                <h3>✦ Can I check privacy details?</h3>
+                <p>Read the <a href="privacy.html">privacy policy</a> for comprehensive documentation on file access and local-only storage.</p>
+              </div>
+            </section>
+          </div>
 
-    <h3>Where are my files processed?</h3>
-    <p>
-      Previews, conflict checks, Apply, and Undo run on your PC. NeatRename does not upload your files.
-    </p>
+          <h2>Before reporting a problem</h2>
+          <ul>
+            <li>If a folder appears empty, verify the file type filter, hidden-file toggle, and subfolder recursion options.</li>
+            <li>If a rename is blocked, use the preview filter or conflict inspector to jump straight to affected rows.</li>
+            <li>If regex replace fails, test pattern syntax with a simple literal replace first.</li>
+            <li>If undo fails, verify that renamed files have not been moved, locked, or deleted by another application.</li>
+            <li>When opening an issue, include your app version, expected outcome, and the exact preview state.</li>
+          </ul>
 
-    <h3>Why can't I apply a rename?</h3>
-    <p>
-      Check the issues shown in Preview. Apply is blocked by conflicts, duplicate or invalid names,
-      an invalid regex pattern, or a path that Windows cannot use.
-    </p>
+          <h2>Report a problem</h2>
+          <p>
+            <a href="https://github.com/teemoZipsa/neatrename-legal/issues/new/choose">Open a NeatRename support issue on GitHub</a>.
+            Because GitHub issues are public, please redact any sensitive or personal file names and paths before submitting.
+          </p>
+        </article>
+      </section>
+    </main>
 
-    <h3>Why did a CSV row not apply?</h3>
-    <p>
-      A CSV file needs an <code>original,new</code> header. A row will not match if the original
-      name is not in the current batch, appears more than once, or is blank or duplicated in the CSV.
-    </p>
-
-    <h3>Can I undo a rename?</h3>
-    <p>
-      Yes, if the renamed files are still there and their original paths are free. Open History and
-      select the completed operation to undo it.
-    </p>
-
-    <h3>Can I check privacy details?</h3>
-    <p>
-      Read the <a href="privacy.html">privacy policy</a> for details about file access and data saved on your PC.
-    </p>
-
-    <h2>Before reporting a problem</h2>
-    <ul>
-      <li>If a folder shows no files, check the file type filter, hidden-file option, and subfolder option.</li>
-      <li>If a rename is blocked, use the preview filter or issue actions to inspect affected rows.</li>
-      <li>If regex replace fails, check the pattern syntax and try a smaller literal replace first.</li>
-      <li>If undo fails, confirm the renamed files still exist and the original paths are not occupied.</li>
-      <li>Include the app version, what you expected, and what Preview showed.</li>
-    </ul>
-
-    <h2>Report a problem</h2>
-    <p>
-      <a href="https://github.com/teemoZipsa/neatrename-legal/issues/new/choose">Open a NeatRename support issue</a>.
-      GitHub issues are public. Remove personal file names, paths, and screenshots before posting.
-    </p>
-    <p>
-      <a href="privacy.html">Privacy policy</a> · <a href="index.html">NeatRename legal and support home</a>
-    </p>
-  </main>
-
-  <footer>
-    <div class="shell">
-      NeatRename help and privacy information.
-    </div>
-  </footer>
+    <footer class="footer">
+      <p><a href="privacy.html">Privacy policy</a> · <a href="index.html">NeatRename legal and support home</a></p>
+      <span class="footer-badge"><span class="brand-spark">✦</span> Distilled with Gemini clarity</span>
+    </footer>
+  </div>
 </body>
 </html>
